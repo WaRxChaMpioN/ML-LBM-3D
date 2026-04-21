@@ -1,0 +1,8 @@
+tensorflow>=2.10
+numpy
+scipy
+scikit-image
+matplotlib
+tqdm
+pycuda
+h5py
