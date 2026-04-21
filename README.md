@@ -142,19 +142,15 @@ pip install -r requirements.txt
 
 ## Acknowledgements
 
-The CNN architecture and training framework in `poreScaleVelMain.py` is adapted from the ML-LBM codebase of Wang et al. (2021). The LBM solver (`run_lbm_3d.py`) and geometry generation scripts (`generate_geometry_3d.py`, `generate_fractured_geometry_3d.py`) are original work by Kaushal Jha.
+All code in this repository is original and written by Kaushal Jha. The implementations are based on methods described in the papers listed under [Scientific Background](#scientific-background):
 
-If you use the CNN components of this code, please cite the original ML-LBM paper:
+- The CNN surrogate methodology follows Wang et al. (2021)
+- The geometry generation follows Cirpka & Attinger (2003) as described in Liu & Mostaghimi (2017)
+- The fractured geometry generation follows the approach of Dwinanda & Dharmawan (2025)
 
-```bibtex
-@article{wang2021ml,
-  title={ML-LBM: Predicting and Accelerating Steady State Flow Simulation in Porous Media with Convolutional Neural Networks},
-  author={Wang, Ye and Chung, Tae-Hyun and Armstrong, Ryan T and Mostaghimi, Peyman},
-  journal={Transport in Porous Media},
-  year={2021},
-  doi={10.1007/s11242-021-01590-6}
-}
-```
+The extension of the CNN surrogate to fractured porous media — combining fBm fracture generation with the ML-LBM training pipeline — is an original contribution by Kaushal Jha.
+
+If you use this code, please cite the relevant methodology papers above.
 
 ---
 
