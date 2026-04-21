@@ -140,9 +140,11 @@ pip install -r requirements.txt
 
 ---
 
-## Citation
+## Acknowledgements
 
-If you use this code, please cite:
+The CNN architecture and training framework in `poreScaleVelMain.py` is adapted from the ML-LBM codebase of Wang et al. (2021). The LBM solver (`run_lbm_3d.py`) and geometry generation scripts (`generate_geometry_3d.py`, `generate_fractured_geometry_3d.py`) are original work by Kaushal Jha.
+
+If you use the CNN components of this code, please cite the original ML-LBM paper:
 
 ```bibtex
 @article{wang2021ml,
