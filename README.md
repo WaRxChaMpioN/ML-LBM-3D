@@ -142,15 +142,21 @@ pip install -r requirements.txt
 
 ## Acknowledgements
 
-All code in this repository is original and written by Kaushal Jha. The implementations are based on methods described in the papers listed under [Scientific Background](#scientific-background):
+**CNN model code** (`poreScaleVelMain.py`, `src/cnn_models.py`) is taken from the ML-LBM codebase of Wang et al. (2021) and is not original work. Please cite their paper if you use these components:
 
-- The CNN surrogate methodology follows Wang et al. (2021)
-- The geometry generation follows Cirpka & Attinger (2003) as described in Liu & Mostaghimi (2017)
-- The fractured geometry generation follows the approach of Dwinanda & Dharmawan (2025)
+```bibtex
+@article{wang2021ml,
+  title={ML-LBM: Predicting and Accelerating Steady State Flow Simulation in Porous Media with Convolutional Neural Networks},
+  author={Wang, Ye and Chung, Tae-Hyun and Armstrong, Ryan T and Mostaghimi, Peyman},
+  journal={Transport in Porous Media},
+  year={2021},
+  doi={10.1007/s11242-021-01590-6}
+}
+```
 
-The extension of the CNN surrogate to fractured porous media — combining fBm fracture generation with the ML-LBM training pipeline — is an original contribution by Kaushal Jha.
+**All other code** (`run_lbm_3d.py`, `generate_geometry_3d.py`, `generate_fractured_geometry_3d.py`, `paper_plots_3d.py`, `analyse_fracture_lbm.py`) is original and written by Kaushal Jha, implementing methods from the papers listed under [Scientific Background](#scientific-background).
 
-If you use this code, please cite the relevant methodology papers above.
+**Applying the CNN surrogate to fractured porous media** — combining fBm fracture generation with the ML-LBM pipeline — is an original contribution by Kaushal Jha.
 
 ---
 
